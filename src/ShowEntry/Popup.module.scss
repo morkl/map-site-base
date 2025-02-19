@@ -1,0 +1,19 @@
+.popup {
+  border: 1px solid var(--border-color);
+  border-radius: 1em;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: calc(min(4em + 800px, 80vw));
+  min-width: 400px;
+  cursor: auto;
+  position: relative;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+
+  > .body {
+    flex-shrink: 1;
+    overflow-y: auto;
+    padding-bottom: 0.5em;
+  }
+}

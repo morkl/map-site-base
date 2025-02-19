@@ -1,0 +1,95 @@
+@import "../node_modules/ol/ol.css";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  --background-color: hsl(236, 20%, 8%);
+  --border-color: hsl(238, 20%, 15%);
+  --text-color: #f1f1f1;
+  --subtle-text-color: #888;
+  --button-color: #aaa;
+  --button-color-hover: #999;
+  --button-color-checked: #444;
+  --button-text-color: black;
+  --loading-placeholder-background: #dddddd11;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --ol-foreground-color: var(--subtle-text-color);
+  --ol-subtle-foreground-color: var(--subtle-text-color);
+  --ol-partial-background-color: var(--background-color);
+  --ol-background-color: var(--background-color);
+}
+
+.light {
+  --background-color: #fff;
+  --text-color: #121212;
+  --border-color: #ddd;
+  --button-color: #eee;
+  --button-color-checked: #999;
+  --button-color-hover: #ddd;
+  --button-text-color: #222;
+  --loading-placeholder-background: #22222211;
+}
+
+.ol-attribution ul,
+.ol-attribution a,
+.ol-attribution a:hover {
+  text-shadow: none !important;
+  color: var(--subtle-text-color);
+}
+
+a {
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--text-color);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 2em;
+  height: 2em;
+}
+
+button:hover {
+  background-color: var(--button-color-hover);
+  border-color: var(--border-color);
+}
+button.checked {
+  background-color: var(--button-color-checked);
+  border-color: var(--border-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
